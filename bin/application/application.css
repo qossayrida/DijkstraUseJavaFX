@@ -1,0 +1,181 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+    /* Gradient background from #1e90ff at the top to #FcBFFf at the bottom */
+    -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, #1e90ff, #FFBFFf);
+}    
+
+.custom-button {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size: 16;
+    -fx-background-radius: 22;
+    -fx-border-radius: 20;
+    -fx-border-color: #333333;
+    -fx-border-width: 3;
+}
+
+.scroll-pane-background {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555; 
+    -fx-border-width: 2px; 
+    -fx-padding: 10px;
+}
+
+/*
+ * 
+ */
+ 
+.custom-ComboBox {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size: 16;
+    -fx-background-radius: 22;
+    -fx-border-radius: 20;
+    -fx-border-color: #333333;
+    -fx-border-width: 3;
+    -fx-pref-width: 200px; 
+    -fx-pref-height: 30px; 
+}
+
+.custom-ComboBox .list-cell {
+    -fx-background-color: #000000; /* Black background */
+    -fx-background-radius: 22; 
+    -fx-border-radius: 20;
+    -fx-text-fill: #FFFFFF; /* White text */
+}
+
+.custom-ComboBox .list-view {
+    -fx-background-radius: 22; 
+    -fx-border-radius: 20; /* This applies rounded corners to the border */
+    -fx-border-width: 3; /* Border width as per the combo box */
+    -fx-border-color: #333333; /* Border color as per the combo box */
+}
+
+/* Style the scrollbar to be black */
+.custom-ComboBox .list-view .scroll-bar:vertical,
+.custom-ComboBox .list-view .scroll-bar:horizontal {
+    -fx-background-color: black;
+    -fx-background-radius: 5em;
+}
+
+.custom-ComboBox .list-view .scroll-bar .thumb {
+    -fx-background-color: derive(black, 85%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 5em;
+}
+
+.custom-ComboBox .list-view .scroll-bar .thumb:hover {
+    -fx-background-color: derive(black, 75%);
+}
+
+.custom-ComboBox .list-view .scroll-bar .increment-button,
+.custom-ComboBox .list-view .scroll-bar .decrement-button {
+    -fx-background-color: black;
+    -fx-background-radius: 5em;
+}
+
+/* Optional: Style the arrows inside the buttons if they are shown */
+.custom-ComboBox .list-view .scroll-bar .increment-arrow,
+.custom-ComboBox .list-view .scroll-bar .decrement-arrow {
+    -fx-background-color: white;
+}
+
+
+/*
+ * 
+ * 
+ */
+
+.custom-radiobutton .radio {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-min-width: 0px;
+    -fx-min-height: 0px;
+    -fx-background-insets: 0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 0px 0px;
+}
+
+
+.custom-radiobutton .dot {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.custom-radiobutton:selected .dot, .radio-button:armed .dot {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+ /*
+  * 
+  * 
+ */
+  
+  /* Style for TextField */
+.text-field {
+    -fx-background-color: black;
+    -fx-background-radius: 5; /* Adjust as needed for rounded corners */
+    -fx-text-fill: white; /* Font color */
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size: 12;
+    -fx-prompt-text-fill: derive(white, 0.5); /* Color for prompt text, with reduced opacity */
+    -fx-border-color: #333333;
+    -fx-border-radius: 5; /* Match with background radius */
+    -fx-border-width: 3;
+}
+
+/* Style for TextArea */
+.text-area {
+    -fx-background-color: black;
+    -fx-text-fill: white; /* Font color */
+    -fx-border-color: #333333;
+    -fx-border-radius: 5; /* Match with background radius */
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size: 12;
+    -fx-border-width: 3;
+}
+
+/* Additional style for the content area inside TextArea */
+.text-area .content {
+    -fx-background-color: black;
+}
+
+/* Style the scrollbar to match the .custom-ComboBox */
+.text-area .scroll-bar:vertical,
+.text-area .scroll-bar:horizontal {
+    -fx-background-color: black;
+    -fx-background-radius: 5em;
+}
+
+.text-area .scroll-bar .thumb {
+    -fx-background-color: derive(black, 85%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 5em;
+}
+
+.text-area .scroll-bar .thumb:hover {
+    -fx-background-color: derive(black, 75%);
+}
+
+.text-area .scroll-bar .increment-button,
+.text-area .scroll-bar .decrement-button {
+    -fx-background-color: black;
+    -fx-background-radius: 5em;
+}
+
+/* Optional: Style the arrows inside the buttons if they are shown */
+.text-area .scroll-bar .increment-arrow,
+.text-area .scroll-bar .decrement-arrow {
+    -fx-background-color: white;
+}
+
+.text-area .scroll-pane *.corner {
+    -fx-background-color: black; /* Make the corner match the scroll pane */
+}
+

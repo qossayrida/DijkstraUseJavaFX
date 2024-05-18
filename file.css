@@ -1,0 +1,51 @@
+.scroll-pane {
+    -fx-border-color: black;
+    -fx-background-color: rgb(0, 0, 0)
+}
+
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: #000000;
+    -fx-background-radius: 5em;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #666;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 5em;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #555;
+    -fx-background-radius: 5em;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #333;
+    -fx-background-radius: 5em;
+}
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-radius: 0 5em 5em 0;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-radius: 0 0 5em 5em;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-background-color: #999;
+}
+
+.scroll-bar:horizontal .increment-arrow {
+    -fx-shape: "M 0 0 L 4 2 L 0 4 z";
+}
+
+.scroll-bar:vertical .increment-arrow {
+    -fx-shape: "M 0 0 L 2 4 L 4 0 z";
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
